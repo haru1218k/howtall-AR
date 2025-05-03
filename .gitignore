@@ -1,50 +1,67 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
+# Unity Generated Files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
 
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# Auto-generated VS/JetBrains project files
+ExportedObj/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
 
-# testing
-/coverage
+# Rider
+.idea/
+*.sln.iml
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+# OS generated
 .DS_Store
+Thumbs.db
+
+# Environment & Secrets
+.env*
 *.pem
 
-# debug
+# Crash/Debug logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-#custom1
-node_modules/
-.pnpm-debug.log*
-.pnpm-store/
-.next/
+# Custom Unity Assets Cache
 .cache/
-*.tsbuildinfo
+.pnpm-store/
+
+# Unity Cloud Build
+.cloud/
+
+# Unity Addressables
+Assets/AddressableAssetsData/*/*.bin*
+Assets/AddressableAssetsData/*/*.link.xml
+
+# Unity Collaborate
+.collabignore
+
+# Rider settings folder
+.idea/
+
+# VSCode settings
+.vscode/
+
+# Uncomment if you have git-lfs configured for large assets
+# *.psd filter=lfs diff=lfs merge=lfs -text
